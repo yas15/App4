@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App4"
+             x:Class="App4.MainPage">
+
+    <StackLayout Padding="40">
+
+        <!--Entry is used for single-line text input.-->
+        <Entry Placeholder="Enter an integer">
+
+            <!--Apply the Behavior IntValidationBehavior to the Entry placeholder.
+            IntValidationBehavior will validate the input value and highlight it if it is incorrect -->
+            <Entry.Behaviors>
+                <local:IntValidationBehavior />
+            </Entry.Behaviors>
+
+        </Entry>
+    </StackLayout>
+
+</ContentPage>
